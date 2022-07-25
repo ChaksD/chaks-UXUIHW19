@@ -1,0 +1,143 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+html,body {
+  width:100%;
+  height: 100% ;
+}
+
+.tryOpportunities {
+  display:flex;
+  align-items: flex-end;
+  gap:10px;
+  padding-bottom: 30px;
+  
+}
+
+#outerContainer {
+  width:210px;
+  height:40px;
+  display: flex;
+  place-items:center;
+  overflow:hidden;
+}
+  
+.circle {
+  border-radius: 50%;
+  width:30px;
+  height:30px;
+  display: flex;
+  place-items:center;
+  background-color:green;
+  opacity:0;
+  animation:scaleIn 4s infinite cubic-bezier(.36,.11,.89,.32);
+}
+  
+  @keyframes scaleIn {
+    from {
+      transform:scale (.5,.5);
+      opacity:.5;
+    }
+    to {
+      transform:scale (2.5,2.5);
+      opacity:0;
+    }
+  }
+  
+circle {
+  animation-delay:-3s;
+}
+
+h3 {
+  font-family: montserrat,open sans, sans-serif;
+  color: #454343;
+  font-size:8px ;
+}
+
+.navList{
+  margin:0;
+  padding: 1rem 0;
+  display:flex;
+  justify-content:flex-end;
+  align-items: center;
+  color: #454343;
+  font-family: montserrat,open sans, sans-serif;
+  font-size: 28px;
+  padding-left:20px;
+  padding-right:20px;
+  padding-top:20px ;
+}
+
+.navItems{
+  list-style: none;
+  margin-right: 2rem;
+}
+
+.navItems a{
+  text-decoration:none;
+  color: #454343;
+}
+
+.navItems:first-child{
+  margin-right: auto;
+  margin-left:10 rem;
+}
+
+ul li a:hover {
+  color: #B63434;
+}
+
+
+.line {
+  border-bottom:1px solid;
+  color: #C8B6A3;
+  display:block;
+}
+
+
+.wrapper {
+  display:grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1em;
+  grid-auto-rows: minmax (200px, auto);
+}
+
+.wrapper {
+   padding: 1em;
+   /* background: #eee; */
+}
+
+.container{
+  margin: 35px auto;
+  background-color: #f2f2f2;
+  padding: 35px;
+  border-radius: 7px;
+  padding-bottom: 2rem; 
+}
+
+.form-label {
+  margin-top: 24px;
+  margin-bottom: 10px;
+  font-family: montserrat,open sans, sans-serif;
+}
+
+.form-check-inline {
+  margin-top: 24px;
+  margin-bottom: 24px;
+  gap: 4px;
+  padding-right:90px ;
+}
+  
+
+.botton {
+  color: #070707;
+  background-color: #b8b2b2;
+  margin-top: 35px;
+  margin-bottom: 35px;
+  width: 200px;
+  border-color: #b8b2b2;
+  height:40px;
+}
